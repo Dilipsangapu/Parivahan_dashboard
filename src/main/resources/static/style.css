@@ -1,7 +1,8 @@
-/* -- BLUE THEME - MODERN DASHBOARD LOOK WITH ANIMATIONS -- */
+/* -- PROFESSIONAL THEME - MODERN DASHBOARD LOOK WITH ANIMATIONS -- */
 
 /* Import Google Font */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+/* Changed from Inter to Poppins font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 /* Keyframe Animations */
 @keyframes fadeInUp {
@@ -90,7 +91,8 @@ html {
 }
 
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* Updated font family to Poppins */
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   background-color: #f9fafb;
   color: #1f2937;
@@ -107,7 +109,8 @@ body {
 
 /* Header Styles */
 .header {
-  background: linear-gradient(90deg, #0a4d8f 0%, #08417c 100%);
+  /* Updated gradient to professional dark gray/charcoal colors */
+  background: linear-gradient(90deg, #374151 0%, #1f2937 100%);
   color: white;
   padding: 12px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -116,7 +119,8 @@ body {
 }
 
 .header:hover {
-  box-shadow: 0 4px 20px rgba(10, 77, 143, 0.3);
+  /* Updated shadow color to match new gradient */
+  box-shadow: 0 4px 20px rgba(55, 65, 81, 0.3);
 }
 
 .header .container {
@@ -157,7 +161,8 @@ body {
 
 .title-line-1 {
   font-size: 0.9em;
-  font-weight: 500;
+  /* Made title 1 bold */
+  font-weight: 700;
   letter-spacing: 0.5px;
   opacity: 0.9;
   transition: opacity 0.3s ease, letter-spacing 0.3s ease;
@@ -170,6 +175,7 @@ body {
 
 .title-line-2 {
   font-size: 1.5em;
+  /* Title 2 already bold, keeping it bold */
   font-weight: 700;
   transition: text-shadow 0.3s ease;
 }
@@ -207,7 +213,8 @@ body {
 
 .header nav a:hover {
   background-color: white;
-  color: #0a4d8f;
+  /* Updated hover color to match new gradient */
+  color: #374151;
   transform: translateY(-2px) scale(1.05);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
@@ -258,10 +265,18 @@ body {
   animation: fadeInUp 0.6s ease-out calc(var(--delay, 0) * 0.1s) both;
 }
 
-.form-group:nth-child(1) { --delay: 4; }
-.form-group:nth-child(2) { --delay: 5; }
-.form-group:nth-child(3) { --delay: 6; }
-.form-group:nth-child(4) { --delay: 7; }
+.form-group:nth-child(1) {
+  --delay: 4;
+}
+.form-group:nth-child(2) {
+  --delay: 5;
+}
+.form-group:nth-child(3) {
+  --delay: 6;
+}
+.form-group:nth-child(4) {
+  --delay: 7;
+}
 
 .form-group label {
   font-weight: 500;
@@ -272,7 +287,8 @@ body {
 }
 
 .form-group:hover label {
-  color: #0a4d8f;
+  /* Updated hover color to match new theme */
+  color: #374151;
   transform: translateX(3px);
 }
 
@@ -287,8 +303,9 @@ body {
 
 .form-group select:focus {
   outline: none;
-  border-color: #0a4d8f;
-  box-shadow: 0 0 0 3px rgba(10, 77, 143, 0.2);
+  /* Updated focus color to match new theme */
+  border-color: #374151;
+  box-shadow: 0 0 0 3px rgba(55, 65, 81, 0.2);
   transform: scale(1.02);
 }
 
@@ -300,7 +317,8 @@ body {
 
 .refresh-btn {
   padding: 10px 20px;
-  background: linear-gradient(90deg, #0a4d8f 0%, #08417c 100%);
+  /* Updated button gradient to match new theme */
+  background: linear-gradient(90deg, #374151 0%, #1f2937 100%);
   color: white;
   border: none;
   border-radius: 8px;
@@ -332,9 +350,11 @@ body {
 }
 
 .refresh-btn:hover {
-  background: linear-gradient(90deg, #08417c 0%, #0a4d8f 100%);
+  /* Updated hover gradient to match new theme */
+  background: linear-gradient(90deg, #1f2937 0%, #374151 100%);
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 8px 25px rgba(10, 77, 143, 0.4);
+  /* Updated shadow color to match new theme */
+  box-shadow: 0 8px 25px rgba(55, 65, 81, 0.4);
 }
 
 .refresh-btn:active {
@@ -366,7 +386,8 @@ body {
 }
 
 .data-panel-header:hover {
-  background: linear-gradient(90deg, rgba(10, 77, 143, 0.05) 0%, rgba(8, 65, 124, 0.05) 100%);
+  /* Updated hover background to match new theme */
+  background: linear-gradient(90deg, rgba(55, 65, 81, 0.05) 0%, rgba(31, 41, 55, 0.05) 100%);
 }
 
 .data-panel-header h2 {
@@ -377,7 +398,8 @@ body {
 }
 
 .data-panel-header:hover h2 {
-  color: #0a4d8f;
+  /* Updated hover color to match new theme */
+  color: #374151;
   transform: translateX(5px);
 }
 
@@ -411,7 +433,8 @@ thead th {
 
 thead th:hover {
   background-color: #f3f4f6;
-  color: #0a4d8f;
+  /* Updated hover color to match new theme */
+  color: #374151;
   transform: translateY(-1px);
 }
 
@@ -420,21 +443,28 @@ tbody tr {
   animation: fadeInUp 0.6s ease-out calc(var(--row-delay, 0) * 0.05s) both;
 }
 
-tbody tr:nth-child(odd) { --row-delay: 1; }
-tbody tr:nth-child(even) { --row-delay: 2; }
+tbody tr:nth-child(odd) {
+  --row-delay: 1;
+}
+tbody tr:nth-child(even) {
+  --row-delay: 2;
+}
 
 tbody tr:last-child td {
   border-bottom: none;
 }
 
 tbody tr:hover {
-  background: linear-gradient(90deg, rgba(10, 77, 143, 0.05) 0%, rgba(8, 65, 124, 0.05) 100%);
+  /* Updated hover background to match new theme */
+  background: linear-gradient(90deg, rgba(55, 65, 81, 0.05) 0%, rgba(31, 41, 55, 0.05) 100%);
   transform: translateX(5px) scale(1.01);
-  box-shadow: 0 4px 15px rgba(10, 77, 143, 0.1);
+  /* Updated shadow color to match new theme */
+  box-shadow: 0 4px 15px rgba(55, 65, 81, 0.1);
 }
 
 tbody tr:hover td {
-  color: #0a4d8f;
+  /* Updated hover color to match new theme */
+  color: #374151;
   font-weight: 500;
 }
 
@@ -459,14 +489,16 @@ tbody tr:hover td {
 }
 
 .type-header-row:hover td {
-  background: linear-gradient(90deg, #0a4d8f 0%, #08417c 100%);
+  /* Updated hover background to match new theme */
+  background: linear-gradient(90deg, #374151 0%, #1f2937 100%);
   color: white;
   transform: scale(1.02);
 }
 
 /* Accessibility */
 *:focus-visible {
-  outline: 2px solid #0a4d8f;
+  /* Updated focus outline color to match new theme */
+  outline: 2px solid #374151;
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -520,7 +552,8 @@ tbody tr:hover td {
     transform: translateX(2px) scale(1.005);
   }
 
-  th, td {
+  th,
+  td {
     padding: 12px 16px;
   }
 }
