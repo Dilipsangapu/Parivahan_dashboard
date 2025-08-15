@@ -21,13 +21,14 @@ Built with **Java 21** and **Maven**, designed for scalability and easy integrat
 ---
 
 ## 📂 Project Structure
+```plaintext
 Parivahan-Dashboard/
-├── src/ # Java source code & resources
-├── pom.xml # Maven configuration
-├── mvnw / mvnw.cmd # Maven wrapper scripts
-├── HELP.md # Spring Boot help file
-├── .gitignore # Git ignore rules
-└── .gitattributes # Git attributes
+├── src/               # Java source code & resources
+├── pom.xml            # Maven configuration
+├── mvnw / mvnw.cmd    # Maven wrapper scripts
+├── HELP.md            # Spring Boot help file
+├── .gitignore         # Git ignore rules
+└── .gitattributes     # Git attributes
 
 
 ---
